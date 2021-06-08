@@ -9,7 +9,8 @@ pipeline {
         
         stage('Cloning Git') {
             steps {
-                git branch: 'master', credentialsId: 'github', url: 'https://github.com/kkamal123/centralgit.git'
+          //      git branch: 'master', credentialsId: 'github', url: 'https://github.com/kkamal123/centralgit.git'
+                  sh 'git clone https://github.com/kkamal123/centralgit.git'
             }
         }
         
